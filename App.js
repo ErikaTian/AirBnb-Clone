@@ -9,8 +9,18 @@ export default function App() {
     return (
       <Card
         key={item.id}
-        {...item}
+        {...item}  // OR: item={item}, with this need to revise Card.js correspondingly
       />
+      // <Card
+      //   key={item.id}
+      //   img={item.coverImg}
+      //   rating={item.stats.rating}
+      //   reviewCount={item.stats.reviewCount}
+      //   location={item.location}
+      //   title={item.title}
+      //   price={item.price}
+      //   openSpots={item.openSpots}
+      // />
     )
   })
 
